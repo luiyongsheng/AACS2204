@@ -15,5 +15,4 @@ I've preset the build environment. You only need to change the `jdkPath` in `.vs
     Solution:
     
     If you need to input data from keyboard, you can use terminal to run the code by typing `java P3Q3`(According to the file name) after you've build and compiled the java code.
-    
       ![Do this after compile](http://image.ibb.co/iQB1Hk/image.png)
