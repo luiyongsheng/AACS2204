@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "externalConsole": false,
+            "stopOnEntry": false,
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasename}",
+            "options": [
+                "-classpath",
+                "\"${fileDirname};.\""
+            ],
+            "jdkPath": "C:\\Program Files\\Java\\jdk1.8.0_112\\bin",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart",
+            
+            
+        }
+    ]
+}
