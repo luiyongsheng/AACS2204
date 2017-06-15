@@ -16,3 +16,4 @@ public class P3Q2 {
         System.out.println(index);
     }
 }
+// test
