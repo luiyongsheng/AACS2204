@@ -16,7 +16,7 @@
             ],
             "jdkPath": "C:\\Program Files\\Java\\jdk1.8.0_112\\bin",
             "preLaunchTask": "build",
-            "internalConsoleOptions": "openOnSessionStart",
+            "internalConsoleOptions": "openOnSessionStart"
             
             
         }
