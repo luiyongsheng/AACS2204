@@ -16,3 +16,11 @@ I've preset the build environment. You only need to change the `jdkPath` in `.vs
     
     If you need to input data from keyboard, you can use terminal to run the code by typing `java P3Q3`(According to the file name) after you've build and compiled the java code.
       ![Do this after compile](http://image.ibb.co/iQB1Hk/image.png)
+
+2.  Java debug type not found.
+    
+    Solution:
+    
+    You need to install the `donjayamanne.javadebugger` extension to debug and compile your code.
+    
+    Install : https://marketplace.visualstudio.com/items?itemName=donjayamanne.javadebugger
