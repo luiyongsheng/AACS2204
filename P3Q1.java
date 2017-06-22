@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class P3Q1 {
     public static void main(String[] args) {
+        
         Scanner _scn = new Scanner(System.in);
         int total = 0;
         do {
