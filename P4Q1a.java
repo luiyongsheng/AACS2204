@@ -11,7 +11,7 @@ class Employee{
       salary = salary + (salary * percent / 100.0);
    }
 }
-public class P4Q1 {
+public class P4Q1a {
     public static void main(String[] args) {
         Employee emp = new Employee("Lui Yong Sheng", 97803.30);
         System.out.format("%s's salary before 8%% salary raise : RM %.2f\n",
