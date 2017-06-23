@@ -31,6 +31,7 @@ class OrderNode {
 }
 public class P4Q6 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         ArrayList<Cake> cakesAvailable = new ArrayList<Cake>();
         String[] flavors = new String[]
         {
@@ -43,7 +44,14 @@ public class P4Q6 {
         for(int i=0; i < 5; i++) {
             cakesAvailable.add(new Cake(flavors[i], basePrices[i]));
         }
-
-        System.out.println(cakesAvailable.get(0).getPriceByKg(32));
+        System.out.println("Mickey Cake House");
+        System.out.println();
+        System.out.print("How many types of cake you would like to order: ");
+        int orderNo = input.nextInt();
+        System.out.println("No Flavours\t\t\t1kg\t\t2kg\t\t3kg"); int index = 1;
+        for(Cake c:cakesAvailable) {
+            System.out.format("%d. %-25s\t\t\n", index, c.flavor);
+            index++;
+        }
     }
 }
