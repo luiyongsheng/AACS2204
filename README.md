@@ -2,9 +2,9 @@
 
 Object-oriented programming in Java [ Tunku Abdul Rahman University College ].
 
-Author: Lui Yong Sheng (DCO2 DD3)
+Author: Lui Yong Sheng(https://www.datasenz.com/luiyongsheng) (DCO2 DD3)
 
-Tutor: Ashvini Devi A/P Krishnan
+Tutor: Ashvini Devi A/P Krishnan(http://www.tarc.edu.my/staffDirectory.jsp?fdept=FOCS&fbrncd=KL&fstaff=Ashvini)
 
 ### Run in Visual Studio Code
 
