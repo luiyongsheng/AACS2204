@@ -81,7 +81,9 @@ public class P4Q6 {
             orders[i].cakeTypeIndex = Math.min(input.nextInt() - 1, 4); // shift to left
             System.out.print("Enter the weight of the cake (1 - 1kg, 2 - 2kg and 3 - 3kg): ");
             orders[i].cakeWeight = Math.min(input.nextInt(), 3);
-            
+            System.out.print("Enter quantity ordered: ");
+            orders[i].quantity = Math.min(input.nextInt(), 100);
+            System.out.println();
         }
     }
 }
