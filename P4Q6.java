@@ -85,5 +85,11 @@ public class P4Q6 {
             orders[i].quantity = Math.min(input.nextInt(), 100);
             System.out.println();
         }
+        System.out.println("Order Details: ");
+        System.out.println("----------------"); int x = 1;
+        System.out.println("No	Cake Flavour		Weight		Unit Price(RM)	Quantity	Total Price(RM)");
+        for(OrderNode order : orders) {
+            System.out.format("%d. %-20s\t\t", x, cakesAvailable.get(order.cakeTypeIndex).flavor);
+        }
     }
 }
