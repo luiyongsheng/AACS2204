@@ -1,6 +1,6 @@
 # AACS 2204
 
-Object-oriented programming in Java [ Tunku Abdul Rahman University College ].
+Object-oriented programming in Java ([Tunku Abdul Rahman University College](http://www.tarc.edu.my)).
 
 Author: [Lui Yong Sheng](https://www.datasenz.com/luiyongsheng) (DCO2 DD3)
 
