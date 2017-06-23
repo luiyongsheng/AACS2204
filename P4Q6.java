@@ -48,9 +48,14 @@ public class P4Q6 {
         System.out.println();
         System.out.print("How many types of cake you would like to order: ");
         int orderNo = input.nextInt();
-        System.out.println("No Flavours\t\t\t1kg\t\t2kg\t\t3kg"); int index = 1;
+        System.out.println("No Flavours\t\t\t   1kg\t\t   2kg\t\t   3kg"); int index = 1;
         for(Cake c:cakesAvailable) {
-            System.out.format("%d. %-25s\t\t\n", index, c.flavor);
+            System.out.format("%d. %-20s\t\t", index, c.flavor);
+            double[] prices = c.getPrices();
+            for(double price : prices) {
+                System.out.format("RM %.2f\t", price);
+            }
+            System.out.println();
             index++;
         }
     }
