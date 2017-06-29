@@ -87,9 +87,18 @@ public class P4Q6 {
         }
         System.out.println("Order Details: ");
         System.out.println("----------------"); int x = 1;
-        System.out.println("No	Cake Flavour		Weight		Unit Price(RM)	Quantity	Total Price(RM)");
+        System.out.println("No	Cake Flavour		Weight		Unit Price(RM)      Quantity	Total Price(RM)");
+        double grandTotal = 0;
+        System.out.println("--------------------------------------------------------------------------------------------------------");
         for(OrderNode order : orders) {
-            System.out.format("%d. %-20s\t\t", x, cakesAvailable.get(order.cakeTypeIndex).flavor);
+            Cake tmp = cakesAvailable.get(order.cakeTypeIndex);
+            System.out.format("%d.\t%-20s\t", x, tmp.flavor);
+            double total = tmp.getPriceByKg(order.cakeWeight) * order.quantity;
+            grandTotal += total;
+            System.out.format("%dkg\t\t\t%.2f\t\t%d\t%.2f\n", order.cakeWeight, tmp.getPriceByKg(order.cakeWeight), order.quantity, total);
+            x++;
         }
+        System.out.println("--------------------------------------------------------------------------------------------------------");
+        System.out.format("\t\t\t\t\t\t\t\tGrand Total :   %.2f\n", grandTotal);
     }
 }
