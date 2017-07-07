@@ -18,32 +18,32 @@ class Car {
  }
  class Person {
      String name;
-     int icNo;
+     String icNo;
 
-     Person(String name, int ic) {
+     Person(String name, String ic) {
          this.name = name;
          this.icNo = ic;
      }
  }
- class CarRegNode {
+ class CarRegister {
+     static int indexer = 1000;
      int regNo;
      Car regCar;
      Person owner;
 
-     CarRegNode(int regNo, Car regCar, Person owner) {
+     /*CarRegNode(int regNo, Car regCar, Person owner) {
          this.regCar = regCar;
          this.owner = owner;
          this.regNo = regNo;
+     }*/
+     CarRegister() {
+         this.regNo = indexer++;
      }
 
-     public addCar() {
-
+     public void setOwner(String name, String ic) {
+         if(ic.matches("[0-9]+") && ic.length() == 12) this.owner = new Person(name, ic);
      }
- }
-
- public class P4Q5 {
-     public static void main(String[] args) {
-         CarRegNode[] reglist = new CarRegNode[50];
-
+     public void setCar(String pn, String clr, int y, String mk, String md, double caps) {
+         this.regCar = new Car(pn,clr,y,mk,md,caps);
      }
  }
