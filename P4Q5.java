@@ -37,7 +37,7 @@ class Car {
          this.regNo = regNo;
      }*/
      CarRegister() {
-         this.regNo = indexer++;
+         this.regNo = ++indexer;
      }
 
      public void setOwner(String name, String ic) {
@@ -45,5 +45,16 @@ class Car {
      }
      public void setCar(String pn, String clr, int y, String mk, String md, double caps) {
          this.regCar = new Car(pn,clr,y,mk,md,caps);
+     }
+ }
+
+ public class P4Q5 {
+     public static void main(String[] args) {
+         CarRegister[] reglist = new CarRegister[50];
+         reglist[0] = new CarRegister();
+         reglist[0].setOwner("Hohenheim", "956622115545");
+         reglist[0].setCar("SS 5557 K", "White", 2013, "Toyota", "Vigo", 3.5);
+
+         reglist[1] = new CarRegister();
      }
  }
